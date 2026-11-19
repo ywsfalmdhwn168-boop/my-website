@@ -1,0 +1,1007 @@
+/* Start Global Ruls */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --bacgroundOne: #FFFFFF;
+    --mainColor: #333333;
+    --colorTwo: #24484F;
+    --colorThree: #10CAB7;
+    --colorFour: #EBECED;
+    --backgroundTwo: #F6F6F6;
+    --colorFive: #777788;
+    --colorImageOne: #2C4755;
+}
+
+ul {
+    list-style: none;
+}
+
+/* End Global Ruls */
+/* Start Header */
+header {
+    background-color: var(--bacgroundOne);
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    padding: 20px;
+}
+
+header .logo .logoIo {
+    font-size: 35px;
+    font-weight: bolder;
+    color: var(--colorTwo);
+}
+
+header .logo .logoIo span {
+    color: var(--colorThree);
+}
+
+header .logo a {
+    text-decoration: none;
+}
+
+header .bar {
+    background: var(--bacgroundOne);
+    width: 60px;
+    height: 40px;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    cursor: pointer;
+    transition: .3s;
+}
+
+header .bar p {
+    height: 4px;
+    width: 45px;
+    transition: .3s;
+    background-color: var(--mainColor);
+}
+
+header .bar p:nth-of-type(2) {
+    width: 25px;
+
+}
+
+header .bar:hover p:nth-of-type(2) {
+    width: 45px;
+
+}
+
+header .openBar {
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 71px;
+    box-shadow: 0px 0px 10px 2px var(--colorFour);
+
+}
+
+header .openBar ul {
+    background: var(--colorFour);
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+header .openBar ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: var(--mainColor);
+    transition: .3s;
+}
+
+header .bar:hover .openBar {
+    display: block;
+}
+
+header .openBar ul li a:hover {
+    color: var(--colorThree);
+}
+
+/* End Header */
+/* Start Section one */
+section:first-of-type {
+    font-family: cursive;
+    background-image: url("../images/backgroundSectionOne.jpg");
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    min-height: 90vh;
+}
+
+section:first-of-type .box {
+    width: 325px;
+}
+
+section:first-of-type .box h2 {
+    font-size: 55px;
+    color: var(--colorThree);
+    margin-bottom: 10px;
+}
+
+section:first-of-type .box p {
+    color: var(--mainColor);
+    width: auto;
+    letter-spacing: 2px;
+}
+
+/* End Section one */
+/* Start Section two */
+section:nth-of-type(2) {
+    display: grid;
+    background-color: var(--backgroundTwo);
+    padding: 50px;
+}
+
+section:nth-of-type(2) .box .boxOne,
+.boxTwo,
+.boxThree {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 325px;
+    padding: 10px;
+}
+
+
+section:nth-of-type(2) .box {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    text-align: center;
+
+}
+
+section:nth-of-type(2) svg {
+    width: 50px;
+    color: var(--colorThree);
+    margin-bottom: 35px;
+}
+
+section:nth-of-type(2) h2 {
+    margin-bottom: 20px;
+    color: var(--colorThree);
+}
+
+section:nth-of-type(2) p {
+    color: var(--colorFive);
+    width: auto;
+    line-height: 25px;
+}
+
+/* End Section two */
+/* Start Section Three */
+section:nth-of-type(3) {
+    background-color: var(--bacgroundOne);
+    padding: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-of-type(3) .title p:first-of-type {
+    font-size: 90px;
+    font-weight: bolder;
+    color: var(--colorFour);
+    text-align: center;
+}
+
+section:nth-of-type(3) .title p:nth-of-type(2) {
+    text-align: center;
+    top: -26px;
+    position: relative;
+    font-size: 19px;
+    color: var(--colorFive);
+}
+
+section:nth-of-type(3) .contanier svg {
+    width: 25px;
+}
+
+section:nth-of-type(3) .bigBox {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 120px;
+    margin-top: 50px;
+
+}
+
+section:nth-of-type(3) .bigBox .contanier .job {
+    display: grid;
+    justify-content: start;
+    align-items: start;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 30px;
+    width: 350px;
+
+}
+
+section:nth-of-type(3) .bigBox .contanier {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto auto;
+}
+
+section:nth-of-type(3) .bigBox .contanier .content h4 {
+    font-size: 20px;
+    color: var(--colorThree);
+    margin-bottom: 7px;
+}
+
+section:nth-of-type(3) .bigBox .img img {
+    width: 280px;
+}
+
+section:nth-of-type(3) .bigBox .secureOne {
+    width: 100px;
+    height: auto;
+    background-color: var(--colorTwo);
+}
+
+section:nth-of-type(3) .bigBox .contanier .content p {
+    color: var(--mainColor);
+}
+
+section:nth-of-type(3) .bigBox .img {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    z-index: 1;
+}
+
+
+
+section:nth-of-type(3) .bigBox .img .secureOne {
+    background-color: var(--colorImageOne);
+    width: 100px;
+    height: 450px;
+    margin-left: -40px;
+}
+
+/* End Section Three */
+/* Start Section four */
+section:nth-of-type(4) {
+    background-color: var(--backgroundTwo);
+    padding: 50px;
+}
+
+section:nth-of-type(4) .bigBox {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    margin-top: 35px;
+}
+
+section:nth-of-type(4) .bigBox img {
+    width: 350px;
+
+}
+
+section:nth-of-type(4) .title p:first-of-type {
+    font-size: 90px;
+    font-weight: bolder;
+    color: var(--colorFour);
+    text-align: center;
+}
+
+section:nth-of-type(4) .title p:nth-of-type(2) {
+    text-align: center;
+    top: -26px;
+    position: relative;
+    font-size: 19px;
+    color: var(--colorFive);
+}
+
+section:nth-of-type(4) .bigBox .box {
+    width: 350px;
+    background-color: white;
+}
+
+section:nth-of-type(4) .bigBox .box h3 {
+    margin: 10px;
+}
+
+section:nth-of-type(4) .bigBox .box p {
+    margin: 10px;
+    color: var(--colorFive);
+}
+
+/* End Section four */
+
+/* Start Section five */
+section:nth-of-type(5) {
+    background-color: var(--bacgroundOne);
+    padding: 20px;
+}
+
+section:nth-of-type(5) .title p:first-of-type {
+    font-size: 90px;
+    font-weight: bolder;
+    color: var(--colorFour);
+    text-align: center;
+}
+
+section:nth-of-type(5) .title p:nth-of-type(2) {
+    text-align: center;
+    top: -26px;
+    position: relative;
+    font-size: 19px;
+    color: var(--colorFive);
+}
+
+section:nth-of-type(5) .box {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    margin-top: 20px;
+}
+
+section:nth-of-type(5) .box img {
+    width: 250px;
+
+}
+
+section:nth-of-type(5) .box .contenier {
+    width: 50rem;
+}
+
+section:nth-of-type(5) .box .contenier p:first-of-type {
+    font-size: 16px;
+    margin-bottom: 35px;
+    font-weight: bolder;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+section:nth-of-type(5) .box .contenier p:nth-of-type(2) {
+    font-size: 16px;
+    margin-top: 35px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    color: var(--colorFive);
+}
+
+section:nth-of-type(5) .box .contenier hr {
+    width: 20rem;
+    border: 1px solid var(--colorThree);
+}
+
+/* End Section five */
+/* Start Section six */
+section:nth-of-type(6) {
+    background-color: var(--backgroundTwo);
+    padding: 50px;
+}
+
+section:nth-of-type(6) .title {
+    text-align: center;
+}
+
+section:nth-of-type(6) .title p:first-of-type {
+    font-size: 90px;
+    font-weight: bolder;
+    color: var(--colorFour);
+    text-align: center;
+}
+
+section:nth-of-type(6) .title p:nth-of-type(2) {
+    text-align: center;
+    top: -26px;
+    position: relative;
+    font-size: 19px;
+    color: var(--colorFive);
+}
+
+section:nth-of-type(6) .content {
+    margin-top: 35px;
+}
+
+section:nth-of-type(6) .content h2:first-of-type {
+    text-align: center;
+    color: var(--colorTwo);
+    font-weight: 900;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+section:nth-of-type(6) .content .email {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: var(--colorThree);
+}
+
+section:nth-of-type(6) .content .box {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+}
+
+section:nth-of-type(6) .content .box .find {
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--mainColor);
+}
+
+section:nth-of-type(6) .content .box svg {
+    width: 25px;
+}
+
+
+
+
+/* End  Section six */
+/* Start Footer */
+footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: var(--colorImageOne);
+    color: white;
+}
+
+footer span {
+    color: var(--colorThree);
+}
+
+/* End Footer */
+
+/* Start Media Quiere */
+@media (min-width:1100px) and (max-width:1250px) {
+    section:nth-of-type(2) {
+        padding: 40px;
+    }
+
+    section:nth-of-type(2) .box .boxOne,
+    .boxTwo,
+    .boxThree {
+        width: 305px;
+    }
+
+    section:nth-of-type(3) .bigBox {
+        gap: 40px;
+        margin-top: 35px;
+    }
+
+    section:nth-of-type(3) .bigBox .img img {
+        width: 250px;
+    }
+
+    section:nth-of-type(3) .bigBox .img .secureOne {
+        background-color: var(--colorImageOne);
+        width: 80px;
+        height: 400px;
+        margin-left: -40px;
+    }
+
+    section:nth-of-type(4) {
+        padding: 40px;
+    }
+
+    section:nth-of-type(4) .bigBox .box {
+        width: 300px;
+    }
+
+    section:nth-of-type(4) .bigBox img {
+        width: 300px;
+    }
+
+    section:nth-of-type(5) .box .contenier {
+        width: 40rem;
+    }
+
+    section:nth-of-type(5) .box .contenier p:first-of-type {
+        font-size: 16px;
+        margin-bottom: 30px;
+        line-height: 30px;
+    }
+
+    section:nth-of-type(5) .box .contenier p:nth-of-type(2) {
+        font-size: 16px;
+        margin-top: 30px;
+        line-height: 35px;
+    }
+
+}
+
+@media (min-width:900px) and (max-width:1100px) {
+    section:nth-of-type(2) {
+        padding: 30px;
+    }
+
+    section:nth-of-type(2) .box .boxOne,
+    .boxTwo,
+    .boxThree {
+        width: 265px;
+    }
+
+    section:nth-of-type(2) svg {
+        width: 40px;
+        margin-bottom: 30px;
+    }
+
+    section:nth-of-type(2) h2 {
+        font-size: 1.3em;
+    }
+
+    section:nth-of-type(3) .bigBox {
+        gap: 15px;
+    }
+
+    section:nth-of-type(3) .bigBox .img img {
+        width: 210px;
+    }
+
+    section:nth-of-type(3) .bigBox .contanier .job {
+        gap: 20px;
+        width: 300px;
+    }
+
+    section:nth-of-type(3) .bigBox .img .secureOne {
+        width: 50px;
+        margin-left: -25px;
+        height: 355px;
+
+    }
+
+    section:nth-of-type(4) .bigBox .box {
+        width: 270px;
+    }
+
+    section:nth-of-type(4) .bigBox img {
+        width: 270px;
+    }
+
+    section:nth-of-type(4) {
+        padding: 25px;
+    }
+
+    section:nth-of-type(5) .box img {
+        width: 200px;
+    }
+
+    section:nth-of-type(5) .box .contenier {
+        width: 34rem;
+    }
+
+    section:nth-of-type(5) .box .contenier p:first-of-type {
+        margin-bottom: 25px;
+        line-height: 30px;
+    }
+
+    section:nth-of-type(5) .box .contenier p:nth-of-type(2) {
+        margin-top: 25px;
+        line-height: 30px;
+    }
+}
+
+@media (min-width:700px) and (max-width:900px) {
+    section:nth-of-type(2) {
+        display: grid;
+        background-color: var(--backgroundTwo);
+        padding: 15px;
+    }
+
+    section:nth-of-type(2) .box {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: auto auto;
+    }
+
+    section:nth-of-type(2) .box .boxOne,
+    .boxTwo,
+    .boxThree {
+        width: 300px;
+    }
+
+    section:nth-of-type(3) .bigBox .img .secureOne {
+        display: none;
+    }
+
+    section:nth-of-type(3) .bigBox {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        gap: 50px;
+        margin-top: 50px;
+    }
+
+    section:nth-of-type(3) .bigBox .img {
+        grid-template-columns: auto;
+    }
+
+    section:nth-of-type(3) {
+        padding: 25px;
+    }
+
+    section:nth-of-type(3) .bigBox .contanier .job {
+        gap: 15px;
+        width: 290px;
+    }
+
+    section:nth-of-type(4) .bigBox {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: auto auto;
+        margin-top: 35px;
+        gap: 20px;
+    }
+
+    section:nth-of-type(4) .bigBox .box {
+        width: 300px;
+    }
+
+    section:nth-of-type(4) .bigBox img {
+        width: 300px;
+    }
+
+    section:nth-of-type(5) .box {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        margin-top: 20px;
+    }
+
+    section:nth-of-type(5) .box img {
+        display: none;
+    }
+
+    section:nth-of-type(5) .box .contenier {
+        width: 40rem;
+    }
+}
+
+@media (min-width:350px) and (max-width:700px) {
+    section:first-of-type .box h2 {
+        font-size: 40px;
+    }
+
+    section:first-of-type .box p {
+        font-size: 14px;
+    }
+
+    section:nth-of-type(2) {
+        padding: 10px;
+    }
+
+    section:nth-of-type(2) .box {
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    section:nth-of-type(2) .box .boxOne,
+    .boxTwo,
+    .boxThree {
+        width: 300px;
+    }
+
+    section:nth-of-type(2) svg {
+        width: 35px;
+        margin-bottom: 20px;
+    }
+
+    section:nth-of-type(2) h2 {
+        margin-bottom: 5px;
+    }
+
+    section:nth-of-type(3) {
+        padding: 10px;
+    }
+
+    section:nth-of-type(3) .title p:first-of-type {
+        font-size: 65px;
+    }
+
+    section:nth-of-type(3) .title p:nth-of-type(2) {
+        top: -18px;
+        font-size: 16px;
+    }
+
+    section:nth-of-type(3) .bigBox {
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        gap: 0;
+    }
+
+    section:nth-of-type(3) .bigBox .contanier {
+        gap: 15px;
+        grid-template-columns: auto;
+    }
+
+    section:nth-of-type(3) .bigBox .contanier .job {
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        gap: 15px;
+        width: 300px;
+    }
+
+    section:nth-of-type(3) .bigBox .img {
+        display: grid;
+        justify-content: space-around;
+        align-items: center;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        z-index: 1;
+    }
+
+    section:nth-of-type(3) .bigBox .img .secureOne {
+        display: none;
+    }
+
+    section:nth-of-type(3) .bigBox {
+        gap: 50px;
+        margin-top: 25px;
+    }
+
+    section:nth-of-type(4) {
+        padding: 10px;
+    }
+
+    section:nth-of-type(4) .title p:first-of-type {
+        font-size: 65px;
+        font-weight: bolder;
+    }
+
+    section:nth-of-type(4) .bigBox {
+        justify-content: center;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+        margin-top: 20px;
+    }
+
+    section:nth-of-type(4) .bigBox .box {
+        width: 310px;
+    }
+
+    section:nth-of-type(4) .bigBox img {
+        width: 310px;
+    }
+
+    section:nth-of-type(5) .title p:first-of-type {
+        font-size: 65px;
+    }
+
+    section:nth-of-type(5) .box {
+        justify-content: center;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+    section:nth-of-type(5) .box .contenier {
+        width: 20rem;
+    }
+
+    section:nth-of-type(5) .box .contenier p:first-of-type {
+        font-size: 15px;
+        line-height: 22px;
+        margin-top: 20px;
+    }
+
+    section:nth-of-type(5) .box .contenier p:nth-of-type(2) {
+        font-size: 15px;
+        line-height: 22px;
+        margin-top: 20px;
+    }
+
+    section:nth-of-type(6) .title p:first-of-type {
+        font-size: 65px;
+    }
+
+    section:nth-of-type(6) {
+        padding: 10px;
+    }
+
+    section:nth-of-type(6) .content {
+        margin-top: 15px;
+    }
+
+    section:nth-of-type(6) .content h2:first-of-type {
+        font-size: 19px;
+    }
+
+    section:nth-of-type(6) .content .email {
+        font-size: 26px;
+    }
+
+
+}
+
+@media (min-width:300px) and (max-width:350px) {
+    section:first-of-type .box h2 {
+        font-size: 48px;
+    }
+
+    section:first-of-type .box {
+        width: 280px;
+    }
+
+    section:first-of-type .box p {
+        letter-spacing: 1px;
+    }
+
+    section:nth-of-type(2) .box {
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    section:nth-of-type(2) {
+        padding: 10px;
+    }
+
+    section:nth-of-type(2) svg {
+        width: 35px;
+        margin-bottom: 20px;
+    }
+
+    section:nth-of-type(2) .box .boxOne,
+    .boxTwo,
+    .boxThree {
+        width: 250px;
+    }
+
+    section:nth-of-type(3) .title p:first-of-type {
+        font-size: 65px;
+    }
+
+    section:nth-of-type(3) .title p:nth-of-type(2) {
+        top: -21px;
+        font-size: 18px;
+    }
+
+    section:nth-of-type(3) .bigBox {
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        gap: 60px;
+    }
+
+    section:nth-of-type(3) .bigBox .contanier {
+        grid-template-columns: auto;
+    }
+
+    section:nth-of-type(3) .bigBox .img .secureOne {
+        display: none;
+    }
+
+    section:nth-of-type(3) .bigBox .contanier .job {
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        width: 280px;
+    }
+
+    section:nth-of-type(4) {
+        padding: 10px;
+    }
+
+    section:nth-of-type(4) .bigBox {
+        justify-content: center;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+        margin-top: 20px;
+    }
+
+    section:nth-of-type(4) .title p:first-of-type {
+        font-size: 55px;
+    }
+
+    section:nth-of-type(4) .title p:nth-of-type(2) {
+        font-size: 17px;
+    }
+
+    section:nth-of-type(4) .bigBox .box {
+        width: 270px;
+    }
+
+    section:nth-of-type(4) .bigBox img {
+        width: 270px;
+    }
+
+    section:nth-of-type(5) .title p:first-of-type {
+        font-size: 55px;
+    }
+
+    section:nth-of-type(5) .title p:nth-of-type(2) {
+        font-size: 18px;
+    }
+
+    section:nth-of-type(5) .box {
+        justify-content: center;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        margin-top: 20px;
+    }
+
+    section:nth-of-type(5) .box .contenier {
+        width: 16rem;
+    }
+
+    section:nth-of-type(5) .box .contenier p:first-of-type {
+        font-size: 15px;
+        margin-bottom: 15px;
+        line-height: 30px;
+        letter-spacing: 2px;
+    }
+
+    section:nth-of-type(5) .box .contenier p:nth-of-type(2) {
+        font-size: 15px;
+        margin-top: 15px;
+        line-height: 30px;
+        letter-spacing: 2px;
+    }
+
+    section:nth-of-type(6) .title p:first-of-type {
+        font-size: 55px;
+    }
+
+    section:nth-of-type(6) {
+        padding: 10px;
+    }
+
+    section:nth-of-type(6) .title p:nth-of-type(2) {
+        top: -20px;
+        font-size: 17px;
+    }
+
+    section:nth-of-type(6) .content {
+        margin-top: 10px;
+    }
+
+    section:nth-of-type(6) .content h2:first-of-type {
+        font-size: 16px;
+    }
+
+    section:nth-of-type(6) .content .email {
+        font-size: 21px;
+    }
+
+    section:nth-of-type(6) .content .box .find {
+        font-size: 12px;
+
+    }
+
+    section:nth-of-type(5) .box .contenier hr {
+        width: 16rem;
+    }
+
+}
